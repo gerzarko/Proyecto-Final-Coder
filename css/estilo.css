@@ -1,0 +1,81 @@
+.cuerpo{
+    background-color: rgb(250, 245, 240);
+}
+
+
+
+.logo_magnolia{
+
+    display: block;
+    text-align: center;
+   
+
+}
+
+.navegador{
+   
+    margin: 0;
+    font-size: 15px;
+    position: relative;
+    text-align: center;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    left: auto;
+    left: auto;
+    top: auto;
+    overflow: hidden;
+
+}
+
+.navegador li{
+    display: inline;
+    width: 90px;   
+    right: 55px;
+    font-family: Ale;    
+}
+
+.navegador__logo_magnolia{
+
+}
+
+.navegador__logo_instragram{
+
+}
+
+
+
+img{
+    display: inline;
+    max-width: 90%;
+    margin-right: 5px;
+    margin-left: 5px;
+  
+}
+
+.fotos{
+
+    display: inline-flex;
+    position: relative;
+    height: 100vw;   
+    width: 100vw;
+    margin: auto;
+        
+}
+
+.ubicacion{
+    text-align: center;
+}
+
+
+
+.footer{
+ 
+    display: block;
+    text-align: center;
+    left: 40px;
+    right: 40px;
+        
+
+}
