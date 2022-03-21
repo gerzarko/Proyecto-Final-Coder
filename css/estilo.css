@@ -1,5 +1,7 @@
-.cuerpo{
-    background-color: rgb(250, 245, 240);
+.cuerpo {
+
+    background-color: #ffffff;
+
 }
 
 
@@ -12,35 +14,63 @@
 
 }
 
+
+
 .navegador{
-   
-    margin: 0;
-    font-size: 15px;
-    position: relative;
     text-align: center;
-    margin-top: auto;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: center;
-    left: auto;
-    left: auto;
-    top: auto;
-    overflow: hidden;
 
 }
 
-.navegador li{
-    display: inline;
-    width: 90px;   
-    right: 55px;
-    font-family: Ale;    
+
+.menu{
+    display: inline-block;
+    z-index: 1000;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: larger;
+    
 }
 
-.navegador__logo_magnolia{
+.menu li{
+    display: inline-block;
+    position: relative;  
+    padding: 10px; 
+}
+
+.menu li a{
+    text-decoration: none;
+    color: black;
+}
+
+.menu a:hover{
+    color: grey;
+}
+
+
+
+.submenu{
+    display: none;
+    position: absolute;
+}
+
+.submenu li{
+    display: block;
+    background-color: red;
+}
+
+.menu li:hover .submenu{
+    display: block;
+}
+
+
+
+
+
+
+.menu__logo_magnolia{
 
 }
 
-.navegador__logo_instragram{
+.menu__logo_instragram{
 
 }
 
@@ -49,23 +79,30 @@
 img{
     display: inline;
     max-width: 90%;
-    margin-right: 5px;
-    margin-left: 5px;
+    margin: 0;
+    padding: 0;
   
 }
 
 .fotos{
 
     display: inline-flex;
-    position: relative;
-    height: 100vw;   
-    width: 100vw;
-    margin: auto;
+
+    
+
         
+}
+
+.info_contacto{
+
+    font-family: 'Alegreya Sans', sans-serif;
+    text-align: center;
+
 }
 
 .ubicacion{
     text-align: center;
+    font-family: 'Alegreya Sans', sans-serif;
 }
 
 
@@ -76,6 +113,6 @@ img{
     text-align: center;
     left: 40px;
     right: 40px;
-        
+    font-family: 'Alegreya Sans', sans-serif;  
 
 }
