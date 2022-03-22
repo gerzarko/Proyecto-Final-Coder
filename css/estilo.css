@@ -8,9 +8,11 @@
 
 .logo_magnolia{
 
+
     display: block;
     text-align: center;
    
+    
 
 }
 
@@ -50,15 +52,23 @@
 .submenu{
     display: none;
     position: absolute;
+    left: 0;
+    
+
+    
+    
 }
 
 .submenu li{
     display: block;
-    background-color: red;
+    background-color: #ffffff;
+    
 }
 
 .menu li:hover .submenu{
     display: block;
+    left: 0;
+   
 }
 
 
@@ -87,8 +97,11 @@ img{
 .fotos{
 
     display: inline-flex;
-
+    text-align: center;
+    margin: 10px;
     
+
+
 
         
 }
@@ -116,3 +129,14 @@ img{
     font-family: 'Alegreya Sans', sans-serif;  
 
 }
+
+
+
+
+
+.formulario{
+    text-align: center;
+    font-family: 'Alegreya Sans', sans-serif;   
+}
+
+
