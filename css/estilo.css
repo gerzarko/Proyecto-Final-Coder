@@ -106,16 +106,29 @@ img{
         
 }
 
+
+
+/* Comienza pagina de contacto */
+
+
+
+.texto_largo{
+    
+
+}
+
 .info_contacto{
 
     font-family: 'Alegreya Sans', sans-serif;
     text-align: center;
+    display: inline-block;
 
 }
 
 .ubicacion{
     text-align: center;
     font-family: 'Alegreya Sans', sans-serif;
+    display: inline-block;
 }
 
 
@@ -131,12 +144,15 @@ img{
 }
 
 
-
-
-
 .formulario{
     text-align: center;
     font-family: 'Alegreya Sans', sans-serif;   
+    display: inline-block;
 }
 
+
+.area_texto{
+    font-family: 'Alegreya Sans', sans-serif;
+    color: black;
+}
 
