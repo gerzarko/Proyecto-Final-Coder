@@ -1,13 +1,39 @@
+
+@media screen and (max-width:760px) {
+
+    
+}
+
+
+
+
+
+
+
+
+
+
 .cuerpo {
 
+    
+    display: grid;
+    grid-template-areas: 
+    "nav"
+    "fotos"
+    "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2,3fr);
     background-color: #ffffff;
+
 
 }
 
 
 
+
 .logo_magnolia{
 
+    grid-area: logo;
 
     display: block;
     text-align: center;
@@ -18,23 +44,35 @@
 
 
 .navegador{
+    grid-area: nav;
+    align-items: center;
     text-align: center;
+    padding-bottom: 0px;
+    
+
 
 }
 
 
 .menu{
-    display: inline-block;
+    
+    display: flex;
     z-index: 1000;
     font-family: 'Alegreya Sans', sans-serif;
-    font-size: larger;
+    font-size: 30px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: center;
     
 }
 
 .menu li{
     display: inline-block;
     position: relative;  
-    padding: 10px; 
+    padding-left: 10px; 
+    padding-right: 10px;
+    padding-bottom: 0px;
 }
 
 .menu li a{
@@ -72,39 +110,29 @@
 
 
 
-
-
-
-.menu__logo_magnolia{
-
-}
-
-.menu__logo_instragram{
-
-}
-
-
-
-img{
-    display: inline;
-    max-width: 90%;
-    margin: 0;
-    padding: 0;
-    align-items: center;
-  
-}
-
 .fotos{
 
-    display: inline-flex;
+    display: flex;
     text-align: center;
-    margin: 10px;
-    margin-top: 7.5%;
-    margin-bottom: 7.5%;
-
-        
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: none;
+    padding: none;
+    align-items: center;
+    justify-content: center;
 }
+
+.fotos h3{
+
+    padding: 10px;
+    padding-top: 0px;
+}
+
+
+
 .ubicacion{
+
+    grid-area: ubicacion;
     text-align: center;
     font-family: 'Alegreya Sans', sans-serif;
     
@@ -120,7 +148,9 @@ img{
 
 
 .footer{
- 
+
+    grid-area: footer;
+
     text-align: center;
     left: 40px;
     right: 40px;
@@ -139,7 +169,7 @@ img{
     background-color: grey;
     width: 60%;
     border-color: none;   
-    
+    padding-bottom: 0px;
 }
 
 
@@ -169,24 +199,19 @@ img{
 
 
 .formulario{
-    display: inline;
+    
     text-align: left;
     font-family: 'Alegreya Sans', sans-serif;   
-    width: 100px;
-    clear: both;
-    margin-left: 32%;
-    margin-right: 32%;
+    
    
 }
 
 .form{
 
-    width: 35%;
-    height: 35%;
-    clear: both;
-    margin-left: 30%;
-    margin-right: 30%;
-    text-align: left;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
     
 }
 
@@ -210,13 +235,17 @@ img{
 
 
 #ubicacion_contacto{
-    display: inline-block;
+    display: flex;
+    align-content: center;
+    justify-content: center;
     margin: none;
     padding: none;
 }
 
 .info_contacto{
-    display: inline-block;
+    display: flex;
+    align-content: center;
+    justify-content: center;
     font-family: 'Alegreya Sans', sans-serif;
     height: max-content;
 
@@ -229,7 +258,17 @@ img{
 
 /* Comienza pagina de Precios */
 
+
+.precios{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
 .titulo_precios{
+
     font-family: 'Alegreya Sans', sans-serif;
     text-align: center;
     padding-bottom: 3%;
@@ -258,8 +297,15 @@ img{
 
 /* Comienza pagina de Casamientos */
 
-.texto_casamiento{
+.magnolia_titulo_sobremi{
 
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.texto_casamiento{
+    
     text-align: center;
     margin-left: 30%;
     margin-right: 30%;
@@ -270,6 +316,9 @@ img{
 
 
 .foto_casamiento{
+    display: flex;
+    align-content: center;
+    justify-content: center;
     text-align: center;
 }
 
@@ -280,6 +329,9 @@ img{
 
 .texto_sobremi{
 
+    display: flex;
+    align-content: center;
+    justify-content: center;
     text-align: center;
     margin-left: 30%;
     margin-right: 30%;
@@ -298,3 +350,48 @@ img{
 
 
 
+@media screen and (max-width: 480px) {
+
+    .menu{
+        font-size: 19px;
+        padding: none;
+
+    }
+
+    .fotos{
+
+    }
+
+    .ubicacion h3{
+        font-size: 20px;
+    }
+
+    #google_maps{
+        width: 400px;
+        height: 225px ;
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+
+    .formulario{
+        font-size: 10px;
+    }
+
+    .intro_contacto{
+        font-size: 14px;
+    }
+
+    .titulo_precios{
+        font-size: 18px;
+    }
+
+    .tabla{
+        font-size: 12px;
+    }    
+
+
+    .texto_casamiento{
+        font-size: 15px;
+    }
+    
+}
