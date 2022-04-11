@@ -1,17 +1,9 @@
 
-@media screen and (max-width:760px) {
 
-    
+body{
+    margin: 0;
+    padding: 0;
 }
-
-
-
-
-
-
-
-
-
 
 .cuerpo {
 
@@ -22,12 +14,11 @@
     "fotos"
     "footer";
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(2,3fr);
+    grid-template-rows: 0.5fr 1fr 1fr;
     background-color: #ffffff;
-
+    
 
 }
-
 
 
 
@@ -39,6 +30,7 @@
     text-align: center;
 
 
+
 }
 
 
@@ -48,18 +40,32 @@
     align-items: center;
     text-align: center;
     padding-bottom: 0px;
-    
+    margin: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+
 
 
 }
 
+#titulo{
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 50px;
+    font-weight: bolder;
+}
+#logo{
+    height: 100px;
+    width: 200px;
+}
 
 .menu{
     
     display: flex;
     z-index: 1000;
     font-family: 'Alegreya Sans', sans-serif;
-    font-size: 30px;
+    font-size: 20px;
+    font-weight: bolder;
     flex-direction: row;
     flex-wrap: wrap;
     align-content: space-around;
@@ -70,8 +76,8 @@
 .menu li{
     display: inline-block;
     position: relative;  
-    padding-left: 10px; 
-    padding-right: 10px;
+    padding-left: 40px; 
+    padding-right: 40px;
     padding-bottom: 0px;
 }
 
@@ -82,6 +88,7 @@
 
 .menu a:hover{
     color: grey;
+    cursor: pointer;
 }
 
 
@@ -105,6 +112,7 @@
 .menu li:hover .submenu{
     display: block;
     left: 0;
+    
    
 }
 
@@ -112,20 +120,40 @@
 
 .fotos{
 
+
     display: flex;
+    align-content: center;
+    justify-content: center;
     text-align: center;
     flex-wrap: wrap;
     flex-direction: row;
-    margin: none;
-    padding: none;
-    align-items: center;
-    justify-content: center;
+    
+
 }
 
-.fotos h3{
+#imagen_index_1{
 
+    height: 335px;
+    width: 335px;
     padding: 10px;
-    padding-top: 0px;
+
+}
+
+#imagen_index_2{
+    height: 335px;
+    width: 335px;
+    padding: 10px;
+}
+#imagen_index_3{
+    height: 335px;
+    width: 335px;
+    padding: 10px;
+}
+
+#imagen_index_4{
+    height: 335px;
+    width: 335px;
+    padding: 10px;
 }
 
 
@@ -145,12 +173,17 @@
     font-size: 35px;
 }
 
-
+#google_maps{
+    width: 800px;
+    height: 450px ;
+    padding-left: 2px;
+    padding-right: 2px;
+}
 
 .footer{
 
     grid-area: footer;
-
+    
     text-align: center;
     left: 40px;
     right: 40px;
@@ -170,6 +203,8 @@
     width: 60%;
     border-color: none;   
     padding-bottom: 0px;
+    padding: none;
+    margin: none;
 }
 
 
@@ -350,7 +385,8 @@
 
 
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width:767px) {
+
 
     .menu{
         font-size: 19px;
@@ -394,4 +430,43 @@
         font-size: 15px;
     }
     
+}
+
+
+@media screen and (max-width:1023px) {
+ 
+    
+    .ubicacion h3{
+        font-size: 25px;
+    }
+
+    #google_maps{
+        width: 600px;
+        height: 325px ;
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+
+    .formulario{
+        font-size: 12px;
+    }
+
+    .intro_contacto{
+        font-size: 18px;
+    }
+
+    .titulo_precios{
+        font-size: 22px;
+    }
+
+    .tabla{
+        font-size: 15px;
+    }    
+
+
+    .texto_casamiento{
+        font-size: 15px;
+    }
+
+
 }
