@@ -89,6 +89,8 @@ body{
 .menu a:hover{
     color: grey;
     cursor: pointer;
+    font-size: 24px;
+    transition: all 1s;
 }
 
 
@@ -133,26 +135,27 @@ body{
 
 #imagen_index_1{
 
-    height: 335px;
-    width: 335px;
+    height: 325px;
+    width: 325px;
     padding: 10px;
+
 
 }
 
 #imagen_index_2{
-    height: 335px;
-    width: 335px;
+    height: 325px;
+    width: 325px;
     padding: 10px;
 }
 #imagen_index_3{
-    height: 335px;
-    width: 335px;
+    height: 325px;
+    width: 325px;
     padding: 10px;
 }
 
 #imagen_index_4{
-    height: 335px;
-    width: 335px;
+    height: 325px;
+    width: 325px;
     padding: 10px;
 }
 
@@ -383,7 +386,7 @@ body{
     font-family: 'Alegreya Sans', sans-serif;
 }
 
-
+/* ---------------- ARRANCA MOBILE -----------------------*/
 
 @media screen and (max-width:767px) {
 
@@ -432,6 +435,8 @@ body{
     
 }
 
+
+/* ---------------- ARRANCA TABLET -----------------------*/
 
 @media screen and (max-width:1023px) {
  
