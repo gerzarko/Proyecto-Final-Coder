@@ -7,14 +7,7 @@ body{
 
 .cuerpo {
 
-    
-    display: grid;
-    grid-template-areas: 
-    "nav"
-    "fotos"
-    "footer";
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 1fr 1fr;
+
     background-color: #ffffff;
     
 
@@ -24,19 +17,17 @@ body{
 
 .logo_magnolia{
 
-    grid-area: logo;
-
     display: block;
     text-align: center;
-
-
+    align-items: center;
+    
 
 }
 
 
 
 .navegador{
-    grid-area: nav;
+
     align-items: center;
     text-align: center;
     padding-bottom: 0px;
@@ -129,33 +120,34 @@ body{
     text-align: center;
     flex-wrap: wrap;
     flex-direction: row;
+    padding: 30px;
     
 
 }
 
 #imagen_index_1{
 
-    height: 325px;
-    width: 325px;
+    height: 275px;
+    width: 275px;
     padding: 10px;
 
 
 }
 
 #imagen_index_2{
-    height: 325px;
-    width: 325px;
+    height: 275px;
+    width: 275px;
     padding: 10px;
 }
 #imagen_index_3{
-    height: 325px;
-    width: 325px;
+    height: 275px;
+    width: 275px;
     padding: 10px;
 }
 
 #imagen_index_4{
-    height: 325px;
-    width: 325px;
+    height: 275px;
+    width: 275px;
     padding: 10px;
 }
 
@@ -163,7 +155,7 @@ body{
 
 .ubicacion{
 
-    grid-area: ubicacion;
+
     text-align: center;
     font-family: 'Alegreya Sans', sans-serif;
     
@@ -185,7 +177,7 @@ body{
 
 .footer{
 
-    grid-area: footer;
+
     
     text-align: center;
     left: 40px;
