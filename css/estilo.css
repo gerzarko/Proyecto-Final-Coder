@@ -40,11 +40,24 @@ body{
 
 }
 
+#hambur{
+    display: none;
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+
 #titulo{
     font-family: 'Alegreya Sans', sans-serif;
     font-size: 50px;
     font-weight: bolder;
 }
+
+#titulo_wrap{
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
 #logo{
     height: 100px;
     width: 200px;
@@ -75,13 +88,21 @@ body{
 .menu li a{
     text-decoration: none;
     color: black;
+    transition-timing-function: linear;
+    transition: 1s;
+    
 }
 
 .menu a:hover{
-    color: grey;
+    color:grey;
     cursor: pointer;
     font-size: 24px;
-    transition: all 1s;
+    border-radius: 30px; 
+    box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
+    
+   
+    
 }
 
 
@@ -122,6 +143,7 @@ body{
     flex-direction: row;
     padding: 30px;
     
+    
 
 }
 
@@ -130,27 +152,83 @@ body{
     height: 275px;
     width: 275px;
     padding: 10px;
+    border-radius: 30px;
+    transition: width 2s, height 2s, transform 2s;
+    transition-delay: 1s;
+
+    
 
 
+}
+
+#imagen_index_1:hover{
+
+    width: 300px;
+    height: 300px;
+    transform: rotate(360deg);
+    box-shadow:  20px 20px 60px #bebebe,
+                 -5px -5px 10px #ffffff;
 }
 
 #imagen_index_2{
     height: 275px;
     width: 275px;
     padding: 10px;
+    border-radius: 30px;
+    border-radius: 30px;
+    transition: width 2s, height 2s, transform 2s;
+    transition-delay: 1s; 
+    
+                
 }
+
+#imagen_index_2:hover{
+
+    width: 300px;
+    height: 300px;
+    transform: rotate(360deg);
+    box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
+}
+
 #imagen_index_3{
     height: 275px;
     width: 275px;
     padding: 10px;
+    border-radius: 30px;
+    border-radius: 30px;
+    transition: width 2s, height 2s, transform 2s;
+    transition-delay: 1s;
 }
+
+#imagen_index_3:hover{
+
+    width: 300px;
+    height: 300px;
+    transform: rotate(360deg);
+    box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
+}
+
 
 #imagen_index_4{
     height: 275px;
     width: 275px;
     padding: 10px;
+    border-radius: 30px;
+    border-radius: 30px;
+    transition: width 2s, height 2s, transform 2s;
+    transition-delay: 1s;
 }
 
+#imagen_index_4:hover{
+
+    width: 300px;
+    height: 300px;
+    transform: rotate(360deg);
+    box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
+}
 
 
 .ubicacion{
@@ -171,6 +249,7 @@ body{
 #google_maps{
     width: 800px;
     height: 450px ;
+    border-radius: 30px;
     padding-left: 2px;
     padding-right: 2px;
 }
@@ -350,6 +429,16 @@ body{
     align-content: center;
     justify-content: center;
     text-align: center;
+    
+}
+
+#foto_casamiento{
+    height: 275px;
+    width: 240px;
+    padding: 10px;
+    border-radius: 30px;
+    margin: 20px;
+    margin-bottom: 30px;
 }
 
 /*-------------------------------------------------------*/
@@ -386,6 +475,19 @@ body{
     .menu{
         font-size: 19px;
         padding: none;
+
+    }
+
+    .logo_magnolia{
+        display: none;
+    }
+    .menu{
+        display: none;
+    }
+
+
+    #hambur{
+        display: block;
 
     }
 
@@ -437,6 +539,8 @@ body{
         font-size: 25px;
     }
 
+    
+
     #google_maps{
         width: 600px;
         height: 325px ;
@@ -467,3 +571,4 @@ body{
 
 
 }
+
