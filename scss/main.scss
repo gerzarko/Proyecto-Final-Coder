@@ -1,0 +1,282 @@
+@import "contacto";
+@import "precios";
+@import "casamientos";
+@import "sobre_mi";
+@import "media_queries";
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.cuerpo {
+ 
+    background-color: #ffffff;
+    
+}
+
+.logo_magnolia{
+
+    display: block;
+    text-align: center;
+    align-items: center;
+}
+
+
+
+.navegador{
+
+    align-items: center;
+    text-align: center;
+    padding-bottom: 0px;
+    margin: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+
+}
+
+#hambur{
+    display: none;
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+
+#titulo{
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+#titulo_wrap{
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+#logo{
+    height: 100px;
+    width: 200px;
+}
+
+.menu{
+    
+    display: flex;
+    z-index: 1000;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: center;
+        li{
+    display: inline-block;
+    position: relative;  
+    padding-left: 40px; 
+    padding-right: 40px;
+    padding-bottom: 0px;
+        a{
+        text-decoration: none;
+        color: black;
+        transition-timing-function: linear;
+        transition: 1s;
+        
+        }&:hover{
+            color:grey;
+            cursor: pointer;
+            font-size: 24px;
+            border-radius: 30px; 
+            box-shadow:  20px 20px 60px #bebebe,
+                        -20px -20px 60px #ffffff;
+
+        }
+            }
+    
+}
+
+ 
+
+
+
+
+
+.submenu{
+    display: none;
+    position: absolute;
+    left: 0;
+    
+
+    
+    
+}
+
+.submenu li{
+    display: block;
+    background-color: #ffffff;
+    
+}
+
+.menu li:hover .submenu{
+    display: block;
+    left: 0;
+    
+   
+}
+
+.offcanvas-body{
+    font-size: 30px;
+
+    offcanvas-end{
+
+        border-radius: 30px; 
+        box-shadow:  20px 20px 60px #bebebe,
+                 -20px -20px 60px #ffffff;
+    
+    }
+    
+}
+
+
+
+.fotos{
+
+
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 30px;
+    
+    
+
+}
+
+#imagen_index_1{
+
+    height: 275px;
+    width: 275px;
+    padding: 10px;
+    border-radius: 30px;
+    transition: width 2s, height 2s, transform 2s;
+    transition-delay: 1s;
+    &:hover{
+        width: 300px;
+        height: 300px;
+        transform: rotate(360deg);
+        box-shadow:  20px 20px 60px #bebebe,
+                    -5px -5px 10px #ffffff;
+    }
+
+    
+}
+
+#imagen_index_2{
+    height: 275px;
+    width: 275px;
+    padding: 10px;
+    border-radius: 30px;
+    border-radius: 30px;
+    transition: width 2s, height 2s, transform 2s;
+    transition-delay: 1s;
+    &:hover{
+
+        width: 300px;
+        height: 300px;
+        transform: rotate(360deg);
+        box-shadow:  20px 20px 60px #bebebe,
+                    -20px -20px 60px #ffffff;
+
+
+    } 
+
+    
+                
+}
+
+#imagen_index_3{
+    height: 275px;
+    width: 275px;
+    padding: 10px;
+    border-radius: 30px;
+    border-radius: 30px;
+    transition: width 2s, height 2s, transform 2s;
+    transition-delay: 1s;
+    &:hover{
+
+        width: 300px;
+        height: 300px;
+        transform: rotate(360deg);
+        box-shadow:  20px 20px 60px #bebebe,
+                    -20px -20px 60px #ffffff;
+
+    }
+}
+
+
+
+#imagen_index_4{
+    height: 275px;
+    width: 275px;
+    padding: 10px;
+    border-radius: 30px;
+    border-radius: 30px;
+    transition: width 2s, height 2s, transform 2s;
+    transition-delay: 1s;
+    &:hover{
+        width: 300px;
+        height: 300px;
+        transform: rotate(360deg);
+        box-shadow:  20px 20px 60px #bebebe,
+                    -20px -20px 60px #ffffff;
+    }
+}
+
+
+
+
+.ubicacion{
+
+
+    text-align: center;
+    font-family: 'Alegreya Sans', sans-serif;
+    
+    h3{
+        padding-top: 50px;
+        padding-bottom: 30px;
+        font-size: 35px;
+    }
+   
+}
+
+
+#google_maps{
+    width: 800px;
+    height: 450px ;
+    border-radius: 30px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.footer{
+    
+    text-align: center;
+    left: 40px;
+    right: 40px;
+    font-family: 'Alegreya Sans', sans-serif;  
+   
+}
+
+
+
+/*-------------------------------------------------------*/
+
+
+
+
+
+
