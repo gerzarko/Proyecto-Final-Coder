@@ -4,7 +4,17 @@
 @import "sobre_mi";
 @import "media_queries";
 
+$escritura:(
 
+    cuadrado: 275px, 
+
+);
+
+@mixin size ($witdht,$height) {
+    
+    height: $witdht;
+    width: $height;
+}
 
 body{
     margin: 0;
@@ -51,14 +61,14 @@ body{
 }
 
 #titulo_wrap{
-    font-family: 'Alegreya Sans', sans-serif;
+    @extend #titulo;
     font-size: 40px;
-    font-weight: bolder;
+
 }
 
 #logo{
-    height: 100px;
-    width: 200px;
+    @include size(200px, 100px );
+   
 }
 
 .menu{
@@ -72,19 +82,19 @@ body{
     flex-wrap: wrap;
     align-content: space-around;
     justify-content: center;
-        li{
+        menu li{
     display: inline-block;
     position: relative;  
     padding-left: 40px; 
     padding-right: 40px;
     padding-bottom: 0px;
-        a{
+        menu li a{
         text-decoration: none;
         color: black;
         transition-timing-function: linear;
         transition: 1s;
         
-        }&:hover{
+        menu li a &:hover{
             color:grey;
             cursor: pointer;
             font-size: 24px;
@@ -92,9 +102,9 @@ body{
             box-shadow:  20px 20px 60px #bebebe,
                         -20px -20px 60px #ffffff;
 
+         }
         }
-            }
-    
+     }
 }
 
  
@@ -129,7 +139,7 @@ body{
 .offcanvas-body{
     font-size: 30px;
 
-    offcanvas-end{
+        .off-canvas-body offcanvas-end{
 
         border-radius: 30px; 
         box-shadow:  20px 20px 60px #bebebe,
@@ -158,15 +168,14 @@ body{
 
 #imagen_index_1{
 
-    height: 275px;
-    width: 275px;
+    height: map-get($map:$escritura , $key:cuadrado );
+    width: map-get($map:$escritura , $key:cuadrado );
     padding: 10px;
     border-radius: 30px;
     transition: width 2s, height 2s, transform 2s;
     transition-delay: 1s;
-    &:hover{
-        width: 300px;
-        height: 300px;
+    #imagen_index_1 &:hover{
+        @include size(22px,300px);
         transform: rotate(360deg);
         box-shadow:  20px 20px 60px #bebebe,
                     -5px -5px 10px #ffffff;
@@ -176,17 +185,12 @@ body{
 }
 
 #imagen_index_2{
-    height: 275px;
-    width: 275px;
-    padding: 10px;
-    border-radius: 30px;
-    border-radius: 30px;
-    transition: width 2s, height 2s, transform 2s;
-    transition-delay: 1s;
-    &:hover{
+    height: map-get($map:$escritura , $key:cuadrado );
+    width: map-get($map:$escritura , $key:cuadrado );
+    @extend #imagen_index_1;
+    #imagen_index_2 &:hover{
 
-        width: 300px;
-        height: 300px;
+        @include size(300px,300px);
         transform: rotate(360deg);
         box-shadow:  20px 20px 60px #bebebe,
                     -20px -20px 60px #ffffff;
@@ -199,17 +203,12 @@ body{
 }
 
 #imagen_index_3{
-    height: 275px;
-    width: 275px;
-    padding: 10px;
-    border-radius: 30px;
-    border-radius: 30px;
-    transition: width 2s, height 2s, transform 2s;
-    transition-delay: 1s;
-    &:hover{
+    height: map-get($map:$escritura , $key:cuadrado );
+    width: map-get($map:$escritura , $key:cuadrado );
+    @extend #imagen_index_1;
+    #imagen_index_3 &:hover{
 
-        width: 300px;
-        height: 300px;
+        @include size(300px,300px);
         transform: rotate(360deg);
         box-shadow:  20px 20px 60px #bebebe,
                     -20px -20px 60px #ffffff;
@@ -220,16 +219,11 @@ body{
 
 
 #imagen_index_4{
-    height: 275px;
-    width: 275px;
-    padding: 10px;
-    border-radius: 30px;
-    border-radius: 30px;
-    transition: width 2s, height 2s, transform 2s;
-    transition-delay: 1s;
-    &:hover{
-        width: 300px;
-        height: 300px;
+    height: map-get($map:$escritura , $key:cuadrado );
+    width: map-get($map:$escritura , $key:cuadrado );
+    @extend #imagen_index_1;
+    #imagen_index_4 &:hover{
+        @include size(300px,300px);
         transform: rotate(360deg);
         box-shadow:  20px 20px 60px #bebebe,
                     -20px -20px 60px #ffffff;
@@ -245,7 +239,7 @@ body{
     text-align: center;
     font-family: 'Alegreya Sans', sans-serif;
     
-    h3{
+    .ubicacion h3{
         padding-top: 50px;
         padding-bottom: 30px;
         font-size: 35px;
@@ -255,8 +249,7 @@ body{
 
 
 #google_maps{
-    width: 800px;
-    height: 450px ;
+    @include size(800px,450px);
     border-radius: 30px;
     padding-left: 2px;
     padding-right: 2px;

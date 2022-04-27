@@ -20,11 +20,7 @@
 
 }
 .info_contacto{
-    display: inline;
-    font-family: 'Alegreya Sans', sans-serif;
-    text-align: center;
-    
-    margin-right: 30%;
+   @extend .intro_contacto; 
     margin-left: 0%;
     
 }
