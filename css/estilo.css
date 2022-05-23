@@ -375,6 +375,16 @@ body{
 
 }
 
+.responsive{
+    overflow:hidden;
+
+    padding-bottom:56.25%;
+
+    position:relative;
+
+    height:0;
+}
+
 
 
 /*-------------------------------------------------------*/
@@ -494,7 +504,14 @@ body{
 
     .logo_magnolia{
         display: none;
+        
     }
+
+    #logo{
+        height: 50px;
+        width: 70px;
+    }
+
     .menu{
         display: none;
     }
@@ -514,11 +531,11 @@ body{
     }
 
     #google_maps{
-        width: 400px;
-        height: 225px ;
-        padding-left: 2px;
-        padding-right: 2px;
+        width: 100px;
+        height: 50px;
+        
     }
+
 
     .formulario{
         font-size: 10px;
